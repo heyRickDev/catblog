@@ -13,90 +13,131 @@
     <title>Cat Blog</title>
   </head>
   <body>
-    <header>
+    <header class="container">
       <img src="./assets/paw.svg" alt="Imagem de uma pata de felino" />
-      <label for="searchbox">Pesquise por artigos</label>
-      <input type="text" id="searchbox" placeholder="Pesquise por artigos" />
-      <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="" />
+      <form>
+        <div class="input-wrapper">
+          <label for="searchbox">Pesquise por artigos</label>
+          <input
+            type="text"
+            id="searchbox"
+            placeholder="Pesquise por artigos"
+          />
+        </div>
+      </form>
+      <img
+        id="userphoto"
+        src="https://randomuser.me/api/portraits/men/77.jpg"
+        alt=""
+      />
     </header>
     <main>
       <img
-        src="./assets/catmain.png"
-        alt="Silhueta de um gato e um céu alaranjado"
+      src="./assets/catmain.png"
+      alt="Silhueta de um gato e um céu alaranjado"
+      id="catmain"
       />
-      <h1>Seriam os gatos astronautas?</h1>
-      <p>
-        Os gatos são animais fascinantes e cercados de mistérios. De
-        temperamento independente e misterioso, esses felinos são conhecidos por
-        sua agilidade, elegância e um comportamento muitas vezes imprevisível.
-        Contudo, recentemente, uma teoria tem ganhado espaço na internet e entre
-        teóricos de conspiração: seriam os gatos astronautas? A teoria sugere
-        que os gatos não são animais terrestres, mas sim seres extraterrestres
-        enviados para realizar uma missão específica em nosso planeta. Há
-        relatos históricos que apontam para o fato de que os gatos eram
-        considerados seres sagrados em diferentes culturas e até mesmo
-        associados a figuras divinas. Isso poderia indicar que os gatos têm uma
-        origem muito mais mística do que se pensava anteriormente. Além disso,
-        há teóricos que acreditam que os felinos possuem habilidades telepáticas
-        e são capazes de se comunicar com outras espécies alienígenas. Essa
-        crença baseia-se em relatos de pessoas que afirmam terem visto gatos
-        reagindo a estímulos que não são perceptíveis aos seres humanos, ou até
-        mesmo se comportando de maneira incomum durante eventos astronômicos,
-        como uma aurora boreal. Esses e outros indícios foram interpretados como
-        sinais de que os gatos seriam seres interplanetários.
-      </p>
-    </main>
-    <aside>
-      <h1>Artigos relacionados</h1>
-      <div class="article">
-        <img src="./assets/photo1.jpg" alt="Foto de um gato" />
-        <h2>Sábado preguiçoso</h2>
+      <div class="content">
+        <h1>Seriam os gatos astronautas?</h1>
+        <div class="buttons">
+          <img src="./assets/like.svg" alt="Botão like">
+          <img src="./assets/dislike.svg" alt="Botão Dislike">
+        </div>
         <p>
-          Descubra atividades interessantes para fazer com seu pet durante os
-          finais de semana.
+          Os gatos são animais fascinantes e cercados de mistérios. De
+          temperamento independente e misterioso, esses felinos são conhecidos
+          por sua agilidade, elegância e um comportamento muitas vezes
+          imprevisível. Contudo, recentemente, uma teoria tem ganhado espaço na
+          internet e entre teóricos de conspiração: seriam os gatos astronautas?
+          A teoria sugere que os gatos não são animais terrestres, mas sim seres
+          extraterrestres enviados para realizar uma missão específica em nosso
+          planeta. Há relatos históricos que apontam para o fato de que os gatos
+          eram considerados seres sagrados em diferentes culturas e até mesmo
+          associados a figuras divinas. Isso poderia indicar que os gatos têm
+          uma origem muito mais mística do que se pensava anteriormente. Além
+          disso, há teóricos que acreditam que os felinos possuem habilidades
+          telepáticas e são capazes de se comunicar com outras espécies
+          alienígenas. Essa crença baseia-se em relatos de pessoas que afirmam
+          terem visto gatos reagindo a estímulos que não são perceptíveis aos
+          seres humanos, ou até mesmo se comportando de maneira incomum durante
+          eventos astronômicos, como uma aurora boreal. Esses e outros indícios
+          foram interpretados como sinais de que os gatos seriam seres
+          interplanetários.
         </p>
       </div>
-      <div class="article">
-        <img src="./assets/photo2.jpg" alt="Foto de um gato" />
-        <h2>Balaio de gatos</h2>
-        <p>
-          Como evitar confusões entre seus gatíneos e acostumá-los desde
-          filhotes.
-        </p>
-      </div>
-      <div class="article">
-        <img src="./assets/photo3.jpg" alt="Foto de um gato" />
-        <h2>Cartela de cores</h2>
-        <p>
-          Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais
-          combinam com seu bichano.
-        </p>
-      </div>
-      <div class="article">
-        <img src="./assets/photo4.jpg" alt="Foto de um gato" />
-        <h2>Os gatos sentem frio?</h2>
-        <p>
-          Preparem-se para a frente fria que vem para o país da melhor maneira
-          possível.
-        </p>
-      </div>
-      <div class="article">
-        <img src="./assets/photo5.jpg" alt="Foto de um gato" />
-        <h2>Conheça o Moacir</h2>
-        <p>
-          Moacir é o gatinho da semana do nosso blog. Venha conhecer sua
-          história de superação.
-        </p>
-      </div>
-      <div class="article">
-        <img src="./assets/photo1.jpg" alt="Foto de um gato" />
-        <h2>Sábado preguiçoso</h2>
-        <p>
-          Descubra atividades interessantes para fazer com seu pet durante os
-          finais de semana.
-        </p>
-      </div>
-    </aside>
-    <footer>© 2023 - Rocketseat Explorer</footer>
+      </main>
+      <aside class="content">
+        <h1>Artigos relacionados</h1>
+        <!-- Article 1 -->
+        <div class="article">
+          <img src="./assets/photo1.jpg" alt="Foto de um gato" />
+          <div class="article-wrapper">
+            <h2>Sábado preguiçoso</h2>
+            <p>
+              Descubra atividades interessantes para fazer com seu pet durante os
+              finais de semana.
+            </p>
+          </div>
+        </div>
+        <!-- Article 2 -->
+        <div class="article">
+          <img src="./assets/photo2.jpg" alt="Foto de um gato" />
+         <div class="article-wrapper">
+          <h2>Balaio de gatos</h2>
+          <p>
+            Como evitar confusões entre seus gatíneos e acostumá-los desde
+            filhotes.
+          </p>
+        </div>
+        </div>
+        <!-- Article 3 -->
+        <div class="article">
+          <img src="./assets/photo3.jpg" alt="Foto de um gato" />
+          <div class="article-wrapper">
+          <h2>Cartela de cores</h2>
+          <p>
+            Seu gato é inverno intenso? Verão profundo? Descubra as cores que
+            mais combinam com seu bichano.
+          </p>
+          </div>
+        </div>
+        <!-- Article 4 -->
+        <div class="article">
+          <img src="./assets/photo4.jpg" alt="Foto de um gato" />
+          <div class="article-wrapper">
+          <h2>Os gatos sentem frio?</h2>
+          <p>
+            Preparem-se para a frente fria que vem para o país da melhor maneira
+            possível.
+          </p>
+          </div>
+        </div>
+        <!-- Article 5 -->
+        <div class="article">
+          <img src="./assets/photo5.jpg" alt="Foto de um gato" />
+          <div class="article-wrapper">
+          <h2>Conheça o Moacir</h2>
+          <p>
+            Moacir é o gatinho da semana do nosso blog. Venha conhecer sua
+            história de superação.
+          </p>
+          </div>
+        </div>
+        <!-- Article 5 -->
+        <div class="article">
+          <img src="./assets/photo1.jpg" alt="Foto de um gato" />
+          <div class="article-wrapper">
+          <h2>Sábado preguiçoso</h2>
+          <p>
+            Descubra atividades interessantes para fazer com seu pet durante os
+            finais de semana.
+          </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <p>© 2023 - Rocketseat Explorer</p>
+    </footer>
   </body>
 </html>

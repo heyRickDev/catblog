@@ -3,3 +3,105 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  font-size: 62.5%;
+  --color-base-white: hsl(0, 0%, 100%);
+  --color-base-gray-700: hsl(240, 6%, 13%);
+  --color-base-gray-400: hsl(240, 5%, 7%);
+  --color-base-lightblue: hsl(195, 46%, 40%);
+  --color-base-regularblue: hsl(195, 91%, 25%);
+}
+body {
+  background-color: var(--color-base-white);
+}
+html,
+body,
+input {
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  justify-content: space-around;
+  background-color: var(--color-base-regularblue);
+}
+.container form {
+  flex: 1;
+}
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+.input-wrapper input {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #387e96;
+  padding: 1.2rem;
+  margin: 1.2rem;
+}
+header input::placeholder {
+  opacity: 70%;
+}
+header input::placeholder,
+header input {
+  color: white;
+}
+#userphoto {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
+/* Main content  */
+
+.content {
+  border: 1px solid red;
+  width: 38rem;
+  margin: 0 auto;
+}
+#catmain {
+  width: 100%;
+}
+main h1 {
+  margin-top: 3rem;
+  font-size: 2.4rem;
+}
+h1,
+h2 {
+  font-weight: 700;
+  color: var(--color-base-gray-700);
+}
+.buttons {
+  display: flex;
+  margin: 0.8rem 0 3rem;
+  gap: 1.2rem;
+}
+main p,
+aside p {
+  line-height: 160%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-base-gray-400);
+}
+.article {
+  display: flex;
+  gap: 1.6rem;
+}
+.article img {
+  object-fit: contain;
+}
+.article h2 {
+  font-size: 1.8rem;
+}
+footer {
+  background-color: var(--color-base-lightblue);
+}
+footer p {
+  color: var(--color-base-white);
+  text-align: center;
+  padding: 1.2rem 0;
+  font-weight: 600;
+}
