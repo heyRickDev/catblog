@@ -24,8 +24,10 @@ input {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
   background-color: var(--color-base-regularblue);
+  padding: 0 2.8rem;
+  /* width: 43rem; */
 }
 .container form {
   flex: 1;
@@ -37,11 +39,12 @@ input {
   overflow: hidden;
 }
 .input-wrapper input {
+  width: 100%;
   border: none;
   border-radius: 0.5rem;
   background-color: #387e96;
   padding: 1.2rem;
-  margin: 1.2rem;
+  margin: 1.2rem auto;
 }
 header input::placeholder {
   opacity: 70%;
@@ -51,19 +54,19 @@ header input {
   color: white;
 }
 #userphoto {
+  /* position: relative; */
   width: 4.2rem;
   height: 4.2rem;
   border-radius: 50%;
 }
 /* Main content  */
 
-.content {
-  border: 1px solid red;
-  width: 38rem;
-  margin: 0 auto;
-}
 #catmain {
   width: 100%;
+}
+.content {
+  max-width: 38rem;
+  margin: 0 auto;
 }
 main h1 {
   margin-top: 3rem;
@@ -85,16 +88,31 @@ aside p {
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--color-base-gray-400);
+  width: 38rem;
+}
+aside h1 {
+  margin: 3.4rem 0 3.2rem;
+}
+.box-article {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 3.9rem;
 }
 .article {
+  max-width: 38rem;
   display: flex;
   gap: 1.6rem;
 }
 .article img {
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 .article h2 {
   font-size: 1.8rem;
+}
+.article p {
+  max-width: 21.5rem;
 }
 footer {
   background-color: var(--color-base-lightblue);
@@ -102,6 +120,6 @@ footer {
 footer p {
   color: var(--color-base-white);
   text-align: center;
-  padding: 1.2rem 0;
+  padding: 2.6rem 0;
   font-weight: 600;
 }
